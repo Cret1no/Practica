@@ -6,7 +6,15 @@ function App() {
   const [count2, setCount2] = useState(0);
   const aumentarCount = () => setCount((count) => count + 1);
   const aumentarCount2 = () => setCount2((count2) => count2 + 1);
-  const disminuirCount = () => setCount((count) => count - 1);
+  const disminuirCount = () => {
+    if (count < 0) {
+      alert("El estado no puede ser menor a 0");
+      setCount(0);
+      return;
+    }
+    setCount(count - 1);
+  };
+
   const disminuirCount2 = () => setCount2((count2) => count2 - 1);
   return (
     <>
