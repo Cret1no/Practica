@@ -35,6 +35,9 @@ function App() {
       <Title title="Este es otro Estado" state={count2} />
       <Button label="Aumentar2" parentMethod={aumentarCount2} />
       <Button label="Disminuir2" parentMethod={disminuirCount2} />
+      <Title title="Este es otro Estado" state={count2} />
+      <Button label="Aumentar2" parentMethod={aumentarCount2} />
+      <Button label="Disminuir2" parentMethod={disminuirCount2} />
     </>
   );
 }
