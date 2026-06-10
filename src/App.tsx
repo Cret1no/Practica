@@ -9,7 +9,8 @@ function App() {
   const aumentarCount = () => setCount((count) => count + 1);
 
   const aumentarCount2 = () => setCount2((count2) => count2 + 1);
-  const aumentarCount3 = () => setCount2((count3) => count3 + 1);
+
+  const aumentarCount3 = () => setCount3((count3) => count3 + 1);
 
   const disminuirCount = () => {
     if (count < 0) {
@@ -47,7 +48,7 @@ function App() {
       <Button label="Aumentar2" parentMethod={aumentarCount2} />
       <Button label="Disminuir2" parentMethod={disminuirCount2} />
       <Title title="Este es otro Estado" state={count3} />
-      <Button label="Aumentar2" parentMethod={aumentarCount3} />
+      <Button label="Aumentar3" parentMethod={aumentarCount3} />
       <Button label="Disminuir2" parentMethod={disminuirCount3} />
     </>
   );
